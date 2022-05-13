@@ -6,13 +6,13 @@
     <title>replit</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-
   <body>
     <div class="header">
       <h3>Répertoire de contact</h3>
     </div>
 
     <div class="main">
+      <ul class="content-img"></ul>
       <div class="form">
         <div class="form-title"><h3>Formulaire de contact</h3></div>
         <form action="">
@@ -29,8 +29,8 @@
           <div class="Ggroupe elt">
             <label for="group">Groupe</label><br />
             <select id="group" name="groupe">
-              <option value="dev">Deveppeur FS</option>
-              <option value="sgm">Specialiste MD</option>
+              <option value="Deveppeur FS">Deveppeur FS</option>
+              <option value="Specialiste MD">Specialiste MD</option>
             </select>
           </div>
 
@@ -40,18 +40,6 @@
           </div>
           <br />
           <div class="bas">
-            <!-- <input type="file" id="default-btn" name="picture" hidden />
-            <button
-              onclick="defaultBtnActive()"
-              id="custom-btn"
-              class="custom-btn"
-            >
-              Choisir un fichier
-            </button>
-
-            <div class="img-choice">
-              <img src="#" alt="" id="img-c" />
-            </div>-->
             <input
               type="file"
               id="default-btn"
@@ -62,6 +50,7 @@
               required
             />
             <button
+              type="submit"
               onclick="defaultBtnActive()"
               id="custom-btn"
               class="custom-btn"
@@ -70,37 +59,20 @@
             </button>
 
             <div class="img-choice">
-              <img src="images/image-emily.jpg" alt="" id="image" />
+              <img alt="" id="image" />
             </div>
           </div>
-        </form>
 
-        <div class="bouton">
-          <button class="bt-cree">Créer</button>
-          <button class="bt-reinit">Réinit.</button>
-        </div>
-        <br />
+          <div class="bouton">
+            <button class="bt-cree">Créer</button>
+            <button class="bt-reinit">Réinit.</button>
+          </div>
+        </form>
       </div>
 
       <div class="list">
         <div class="list-title"><h3>Liste de contact</h3></div>
-        <div class="global-contact">
-          <!-- <div class="contact-p">
-            <div class="contact-img">
-              <img src="images/image-emily.jpg" alt="img-ct" class="img-ct" />
-            </div>
-            <div class="contact-content">
-              <h3>Prenom</h3>
-              <h3>Nom</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-                itaque molestiae eos quis, fugit facilis temporibus qui
-                cupiditate, aut possimus aperiam maxime. Quas obcaecati nisi
-                modi nulla placeat, eveniet ad.
-              </p>
-            </div>
-          </div>-->
-        </div>
+        <div class="global-contact"></div>
       </div>
     </div>
 
